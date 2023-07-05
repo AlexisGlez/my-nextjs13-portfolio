@@ -5,7 +5,7 @@
   "scope": "/",
   "start_url": "/",
   "name": "AlexisGlez NextJS Portfolio",
-  "short_name": "AGPortfolio",
+  "short_name": "AlexisGlez NextJS Portfolio",
   "orientation": "portrait",
   "description": "Alexis Glez Portfolio app made with NextJS 13.4, Tailwind, and Framer Motion",
   "icons": [
