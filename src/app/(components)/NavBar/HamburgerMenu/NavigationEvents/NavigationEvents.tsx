@@ -18,7 +18,7 @@ export const NavigationEvents: React.FunctionComponent<{
   }, [pathname, searchParams, onRouteChange]);
 
   if (!isMounted.current) {
-    return <div />;
+    return null;
   }
 
   return <TransitionEffect key={pathname + "TransitionEffect"} />;
