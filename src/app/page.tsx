@@ -58,10 +58,10 @@ export default function Home() {
         </div>
       </Layout>
       <HireMe />
-      <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+      <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden xl:right-4 xl:bottom-4">
         <Image
           src={lightbulbPicture}
-          alt="AlexisGlez"
+          alt="A lightbuld"
           className="w-full h-auto"
         />
       </div>

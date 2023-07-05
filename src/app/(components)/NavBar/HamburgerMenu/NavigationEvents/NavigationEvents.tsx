@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
 import { TransitionEffect } from "@/shared/components/TransitionEffect";
@@ -10,10 +10,16 @@ export const NavigationEvents: React.FunctionComponent<{
 }> = ({ onRouteChange }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isMounted = useRef(false);
 
   useEffect(() => {
+    isMounted.current = true;
     onRouteChange();
   }, [pathname, searchParams, onRouteChange]);
+
+  if (!isMounted.current) {
+    return null;
+  }
 
   return <TransitionEffect key={pathname + "TransitionEffect"} />;
 };
