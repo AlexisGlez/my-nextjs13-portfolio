@@ -8,7 +8,7 @@ import { Footer } from "./(components)/Footer";
 
 const APP_NAME = "AG NextJS Portfolio";
 const APP_DEFAULT_TITLE = "AlexisGlez NextJS Portfolio";
-const APP_TITLE_TEMPLATE = "%s - AG NextJS Portfolio";
+const APP_TITLE_TEMPLATE = "%s";
 const APP_DESCRIPTION =
   "Alexis Glez Portfolio app made with NextJS 13.4, Tailwind, and Framer Motion.";
 
