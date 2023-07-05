@@ -15,7 +15,7 @@ const Details: React.FunctionComponent<{
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%]"
     >
       <CircleIcon containerRef={ref} />
       <motion.div
